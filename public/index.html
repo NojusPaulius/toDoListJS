@@ -7,8 +7,48 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>To do listas</h1>
 
+  <div class="container">
+    <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary modal__button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Add a new task
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">To do list kurimas</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex flex-column">
+              <input type="text" class="modal-textField textInput m-1" placeholder="Enter task">
+              <input type="text" class="modal-textField priorityInput m-1" placeholder="Enter priority">
+              <input type="text" class="modal-textField dueDateInput m-1" placeholder="Enter due date">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary modal__saveButton">Save changes</button>
+          </div>
+        </div>
+    </div>
+    </div>
+    <table class="table table-bordered">
+      <thead class="table__head">
+          <tr>
+              <th>Subject</th>
+              <th>Priority</th>
+              <th>Due date</th>
+              <th>Status</th>
+          </tr>
+          <!-- <img src="/src/images/checked.png"> -->
+      </thead>
+    <tbody class="table__Body">
+
+    </tbody>
+  </table>
+</div>
     
     <script src="app.js"></script>
 </body>
